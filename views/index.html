@@ -21,8 +21,10 @@
             {{ range .users }}
                 <li>
                     名前：{{ .Name }}、年齢：{{ .Age }}
-                    <label><a href="/edit/{{.ID}}">編集</a></label>
-                    <label><a href="/check/{{.ID}}">削除</a></label>
+                    <!-- <label><a href="/edit/{{.ID}}">編集</a></label> -->
+                    <form action="/edit/{{.ID}}" method="GET" style="display: inline;"><input type="submit" value="編集"></form>
+                    <!-- <label><a href="/check/{{.ID}}">削除</a></label> -->
+                    <form action="/check/{{.ID}}" method="GET" style="display: inline;"><input type="submit" value="削除"></form>
                 </li>
             {{end}}
         </ul>
