@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>確認画面</title>
+</head>
+<body>
+  <h1>確認画面</h1>
+  <form action="/delete/{{.user.ID}}" method="POST">
+    削除してよろしいですか？
+    <input type="submit" value="削除">
+  </form>
+</body>
+</html>

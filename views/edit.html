@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>更新画面</title>
+</head>
+<body>
+  <h1>登録内容を変更</h1>
+  <form action="/update/{{.user.ID}}" method="POST">
+    <p>名前：<input type="text" name="name" size="15" placeholder="入力してください" ></p>
+    <p>年齢：<input type="text" name="age" size="15" placeholder="入力してください" ></p>
+    <input type="submit" value="更新">
+  </form>
+</body>
+</html>
